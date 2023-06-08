@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body style="background-image: url('images/books.png');">
 
   <div class="navbar">
     <div>
@@ -22,32 +22,45 @@
         <li><a href="books.html">Books</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="register.html">Register</a></li>
-        <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </div>
   </div>
 
   <main>
 
-    <br>
-    
-    <div class="flex fl-ac fl-jc">
-      <div class="shadow" style="padding: 30px;">
+    <div class="flex fl-ac fl-jc mg-t3">
+
+      <div style="padding: 30px; background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+
         <h2>Registration Form</h2>
         <br><br>
+
         <form action="submit.php" method="POST">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-        
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-        
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" required><br><br>
-        
-          <label for="confirm_password">Confirm Password:</label><br>
-          <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+          <div class="grid grid-col-2 gap-2">
+            <div>
+              <label>First Name:</label><br>
+              <input type="text" id="fname" name="fname" required><br><br>
+            
+              <label>Phone No:</label><br>
+              <input type="tel" id="phone" name="phone" required><br><br>
+            
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" required><br><br>
+            
+            </div>
+            <div>
+              <label>Last Name:</label><br>
+              <input type="text" id="lname" name="lname" required><br><br>
+              
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              
+              <label for="confirm_password">Confirm Password:</label><br>
+              <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+            </div>
+          </div>
         
           <br>
           <a href="">

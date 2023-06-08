@@ -7,10 +7,11 @@
   <title>ABC Bookstore</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
-<body>
+<body style="background-image: url('images/books.png');">
 
   <div class="navbar">
     <div>
@@ -22,13 +23,52 @@
         <li><a href="books.html">Books</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="register.html">Register</a></li>
-        <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </div>
   </div>
 
   <main>
+    <br><br>
+
+    <div class="flex fl-ac fl-jc">
+      <div class="shadow" style="padding: 30px; background-color: white;">
+
+        <h2>Contact Us</h2>
+        <br>
+
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt"></i> ABC Bookstore</p>
+          <p><i class="fas fa-home"></i> 123 Main Street</p>
+          <p><i class="fas fa-map-pin"></i> City, State ZIP</p>
+          <p><i class="fas fa-phone"></i> Phone: <a href="tel:555-123-4567">555-123-4567</a></p>
+          <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@abcbookstore.com">info@abcbookstore.com</a></p>
+        </div>
+
+        <br><br>
+
+        <h2>Send Us Message</h2>
+        <br>
+
+        <form action="submit_contact.php" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+        
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+        
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" required><br><br>
+        
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        
+          <a href="">
+            <div class="button">Send Message</div>
+          </a>
+        </form>
+      </div>
 
   </main>
 
