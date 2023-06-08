@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Bookstore</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div>
+      <h1>ABC Bookstore</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+
+    <br>
+    
+    <div class="flex fl-ac fl-jc">
+      <div class="shadow" style="padding: 30px;">
+        <h2>Registration Form</h2>
+        <br><br>
+        <form action="submit.php" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+        
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+        
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+        
+          <label for="confirm_password">Confirm Password:</label><br>
+          <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        
+          <br>
+          <a href="">
+            <div class="button">Register</div>
+          </a>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <br><br>
+  <div class="footer">
+    <p>Copyright &copy; 2023 ABC Bookstore</p>
+  </div>
+</body>
+</html>

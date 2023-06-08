@@ -1,0 +1,152 @@
+
+/* Default: font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --theme: #212121;
+  --shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* font-family: sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 20px 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*****************************************************************************
+ * Navbar & footer
+ *****************************************************************************/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--theme);
+  color: white;
+  padding: 20px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: var(--theme);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+form input {
+  min-width: 250px;
+  border: 1px solid var(--theme);
+  padding: 8px;
+}
+
+
+/*****************************************************************************
+ * Classes
+ *****************************************************************************/
+
+.img-book {
+  height: 200px;
+}
+
+/* Using div as button */
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 1px solid var(--theme);
+  color: var(--theme);
+}
+.button:hover {
+  background-color: var(--theme);
+  color: white;
+}
+
+
+/*****************************************************************************
+ * Inline styling classes
+ *****************************************************************************/
+
+.pos-absolute { position: absolute }
+.pos-relative { position: relative }
+.pos-fixed { position: fixed }
+.pos-sticky { position: sticky }
+
+.no-display { display: none }
+.flex { display: flex }
+.grid { display: grid }
+.inline { display: inline }
+.block { display: block }
+.inline-block { display: inline-block }
+.inline-grid { display: inline-grid }
+
+.fl-dir-col { flex-direction: column }
+.fl-ac { align-items: center }
+.fl-jc { justify-content: center }
+.fl-jsb { justify-content: space-between }
+.fl-jsa { justify-content: space-around }
+.fl-wrap { flex-wrap: wrap }
+.fl-basis-50 { flex-basis: 50% }
+
+.grid-col-2 { grid-template-columns: repeat(2, 1fr) }
+.grid-col-3 { grid-template-columns: repeat(3, 1fr) }
+.grid-col-4 { grid-template-columns: repeat(4, 1fr) }
+.grid-col-5 { grid-template-columns: repeat(5, 1fr) }
+
+.gap-1 { gap: 10px }
+.gap-2 { gap: 20px }
+
+.mg-t0 { margin-top: 10px }
+.mg-t1 { margin-top: 20px }
+.mg-t2 { margin-top: 50px }
+.mg-t3 { margin-top: 100px }
+
+.mg-b0 { margin-bottom: 10px }
+.mg-b1 { margin-bottom: 20px }
+.mg-b2 { margin-bottom: 50px }
+.mg-b3 { margin-bottom: 100px }
+
+.shadow { box-shadow: var(--shadow); }
+.circle { border-radius: 50%; }
+.hover-underline:hover { text-decoration: underline; }
+.cursor-pointer { cursor: pointer; }
+.hide-overflow { overflow: hidden; }
